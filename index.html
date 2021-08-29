@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.min.js"></script>
+
+<script src="./p5.play.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-database.js"></script>
+    <script>
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAM0LCSn6o8w1yPxgdcqqIHvHR82BYLIMk",
+  authDomain: "multiplayer-car-game-4ebac.firebaseapp.com",
+  databaseURL: "https://multiplayer-car-game-4ebac-default-rtdb.firebaseio.com",
+  projectId: "multiplayer-car-game-4ebac",
+  storageBucket: "multiplayer-car-game-4ebac.appspot.com",
+  messagingSenderId: "1047572880860",
+  appId: "1:1047572880860:web:45d6f52d7fa8b541558319",
+  measurementId: "G-XPGQH7987Z"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+    </script>
+
+  </head>
+  <body>
+      <script src="sketch.js"></script>
+  </body>
+</html>
